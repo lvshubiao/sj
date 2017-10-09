@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+    input {
+        display: inline-block;
+    }
+
+    div {
+        border: 1px solid blue;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        margin-right: 2px;
+        cursor: pointer;
+    }
+
+    span {
+        width: 7px;
+        height: 7px;
+        display: inline-block;
+        position: relative;
+        margin-left: 2px;
+        top: -2px;
+        background: url(imgages/T186tKFDR_XXaYpYLe-35-30.png);
+        background-position: -20px 0;
+    }
+    </style>
+</head>
+
+<body>
+    <select id="select">
+        <option value="123">123</option>
+        <option value="456">456</option>
+        <option value="789">789</option>
+    </select>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script>
+    $(function() {
+        $("#select").change(function() {
+            var $div = $("<div></div>");
+            var $span = $("<span></span>");
+            $div.text($(this).val());            
+            $div.append($span);
+            $div.appendTo($('body'));
+            $("<input value='" + $(this).val() + "' type='hidden'>").appendTo($('body'));
+            $div.click(function() {
+                $(this).remove();
+            });
+        })
+    });
+    </script>
+</body>
+</html>

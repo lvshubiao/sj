@@ -1,0 +1,14 @@
+{
+  "name": "easyui",
+  "homepage": "https://github.com/rickldd/easyui",
+  "_release": "e9d0efdee7",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "e9d0efdee7dcb04a796ba1a34bc87760532f0543"
+  },
+  "_source": "https://github.com/rickldd/easyui.git",
+  "_target": "*",
+  "_originalSource": "easyui",
+  "_direct": true
+}

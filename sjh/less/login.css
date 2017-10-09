@@ -1,0 +1,93 @@
+body {
+  background: url(../imgages/bg.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  height: 2000px;
+  overflow: hidden;
+  padding-top: 250px;
+}
+.content {
+  width: 600px;
+  margin: 0px auto;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 15px 10px;
+}
+.copyright {
+  width: 600px;
+  color: #fff;
+  position: absolute;
+  bottom: 12px;
+  left: 41%;
+}
+img {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+.left-logo {
+  float: left;
+  width: 200px;
+  height: 100px;
+}
+.left-logo img {
+  width: 100%;
+}
+.title-desc {
+  float: left;
+  margin-top: 40px;
+  color: #1292cd;
+  font-size: 24px;
+}
+.userinfo {
+  width: 400px;
+  margin-left: 200px;
+}
+.number,
+.password {
+  width: 300px;
+  margin-bottom: 10px;
+}
+.userinfo-desc {
+  color: #1292cd;
+  font-size: 16px;
+}
+.input {
+  width: 244px;
+  padding: 10px;
+  height: 30px;
+  line-height: 30px;
+  box-sizing: border-box;
+}
+.submit {
+  width: 300px;
+  margin-left: 132px;
+}
+.login,
+.reset {
+  float: left;
+  width: 70px;
+  border-radius: 2px;
+  margin-bottom: 54px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.login > a,
+.reset > a {
+  text-align: center;
+  background-color: #1292cd;
+  display: inline-block;
+  line-height: 26px;
+  font-size: 14px;
+  color: #fff;
+  width: 100%;
+}
+.login:hover {
+  background-color: #1bb75a;
+}

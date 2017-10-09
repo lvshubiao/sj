@@ -1,0 +1,9 @@
+{
+	"resultCode":"0000",
+	"leftMenu":[
+		{"title":"在线保修","deals":"首页","deals1":"保修订单管理"},
+		{"title":"其他管理","deals":"反馈意见","deals1":"参数管理"},
+		{"title":"数据统计","deals":"工种信息统计","deals1":"承修人信息统计"}
+		
+	]
+}

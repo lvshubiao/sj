@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+    .triangle {
+        border-color: #57af1a #fff #fff #fff;
+        border-style: solid;
+        border-width: 100px 60px 0px 60px;
+        width: 0;
+        height: 0;
+    }
+
+    .my {
+        width: 0;
+        height: 0;
+        border-color: red transparent transparent transparent;
+        border-width: 20px;
+        border-style: solid;
+    }
+    /* poptip */
+
+    .poptip {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 6px 10px 5px;
+        *padding: 7px 10px 4px;
+        line-height: 16px;
+        color: #DB7C22;
+        font-size: 12px;
+        background-color: #FFFCEF;
+        border: solid 1px #FFBB76;
+        border-radius: 2px;
+        box-shadow: 0 0 3px #ddd;
+    }
+
+    .poptip-arrow {
+        position: absolute;
+        overflow: hidden;
+        font-style: normal;
+        font-family: simsun;
+        font-size: 12px;
+        text-shadow: 0 0 2px #ccc;
+    }
+
+    .poptip-arrow em,
+    .poptip-arrow i {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-style: normal;
+    }
+
+    .poptip-arrow em {
+        color: #FFBB76;
+    }
+
+    .poptip-arrow i {
+        color: #FFFCEF;
+        text-shadow: none;
+    }
+
+    .poptip-arrow-top,
+    .poptip-arrow-bottom {
+        height: 6px;
+        width: 12px;
+        left: 12px;
+        margin-left: -6px;
+    }
+
+    .poptip-arrow-left,
+    .poptip-arrow-right {
+        height: 12px;
+        width: 6px;
+        top: 12px;
+        margin-top: -6px;
+    }
+
+    .poptip-arrow-top {
+        top: -6px;
+    }
+
+    .poptip-arrow-top em {
+        top: -1px;
+    }
+
+    .poptip-arrow-top i {
+        top: 0px;
+    }
+
+    .poptip-arrow-bottom {
+        bottom: -6px;
+    }
+
+    .poptip-arrow-bottom em {
+        top: -8px;
+    }
+
+    .poptip-arrow-bottom i {
+        top: -9px;
+    }
+
+    .poptip-arrow-left {
+        left: -6px;
+    }
+
+    .poptip-arrow-left em {
+        left: 1px;
+    }
+
+    .poptip-arrow-left i {
+        left: 2px;
+    }
+
+    .poptip-arrow-right {
+        right: -6px;
+    }
+
+    .poptip-arrow-right em {
+        left: -6px;
+    }
+
+    .poptip-arrow-right i {
+        left: -7px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="triangle"></div>
+    <div class="my"></div>
+    <div>▽</div>
+    <!-- 提示框-->
+<!--     <div class="poptip">
+    <span class="poptip-arrow poptip-arrow-top"><em>◆</em><i>◆</i></span>
+    <span class="poptip-arrow poptip-arrow-right"><em>◆</em><i>◆</i></span>
+    <span class="poptip-arrow poptip-arrow-bottom"><em>◆</em><i>◆</i></span>
+    <span class="poptip-arrow poptip-arrow-left"><em>◆</em><i>◆</i></span>
+    Hi，知道吗？
+    <br>大前端D7主题很快就疯抢了！
+</div> -->
+</body>
+
+</html>

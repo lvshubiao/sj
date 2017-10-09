@@ -1,0 +1,33 @@
+http://mall.yucccc.com/#/home锤子商城
+express 获取请求参数
+req.params.xxxxx 从path中的变量
+req.query.xxxxx 从get中的?xxxx=中
+req.body.xxxxx 从post中的变量
+移动端响应式布局方式
+	1、@media  @media还可以用在link标签上。
+	<link rel="stylesheet" href="css/1.css" media='(max-width:500px)'>
+	当浏览器宽度低于500px时，1.css的样式才会有效果。但这不代表大于500px时，就没加载了1.css。使用了@media属性后，只会让你当条件符合了，
+	才让对应的css文件有效果。而且用这种方式有一个好处，就是不用在css里写@media。
+数组内置方法：
+	slice()就是对应String的substring()版本，它截取Array的部分元素，然后返回一个新的Array：
+	如果不给slice()传递任何参数，它就会从头到尾截取所有元素。利用这一点，我们可以很容易地复制一个Array：
+	例子:
+	var arr = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+	arr.slice(0, 3); // 从索引0开始，到索引3结束，但不包括索引3: ['A', 'B', 'C']
+	arr.slice(3); // 从索引3开始到结束: ['D', 'E', 'F', 'G']
+	var arrCopy = arr.slice();
+	arrCopy === arr // false
+数组去重
+	var 
+	r,
+	arr = ['a','a','b','c'];
+	r = arr.filter(function(element,index,self){
+		return self.indexOf(element) === index;
+	})
+求和
+	function sum(arr) {
+	    return arr.reduce(function (x, y) {
+	        return x + y;
+	    });
+	}
+	sum([1, 2, 3, 4, 5]); // 15

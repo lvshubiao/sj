@@ -1,0 +1,70 @@
+<p class="location clear">
+    <span></span> 您的位置:其他管理>>用户管理
+</p>
+<ul class="toolbar clear">
+    <li>
+        <input type="button" name="" class="add" value="增加">
+    </li>
+    <li>
+        <input type="button" name="" class="edit" value="编辑" disabled="disabled">
+    </li>
+    <li>
+        <input type="button" name="" class="del" value="删除" disabled="disabled">
+    </li>
+    <li>
+        <input type="button" name="" class="togroup" value="组授权" disabled="disabled">
+    </li>
+    <li>
+        <input type="button" name="" class="torole" value="角色授权" disabled="disabled">
+    </li>
+    <li>
+        <input type="button" name="" class="grantgroup" value="可授权组" disabled="disabled">
+    </li>
+    <li>
+        <input type="button" name="" class="grantrole" value="可授权角色" disabled="disabled">
+    </li>
+    <li>
+        <input type="button" name="" class="resetpassword" value="重置密码" disabled="disabled">
+    </li>
+</ul>
+<!-- 用户列表 -->
+<div class="usertable">
+    <div class="table-title">
+        <table cellspacing="0" cellpadding="0">
+            <tbody>
+                <tr>
+                    <td class="check">
+                        <input type="checkbox" name="" value="" id="selectAll-usertable">
+                    </td>
+                    <td style="width: 260px;">用户名</td>
+                    <td style="width: 260px;">昵称</td>
+                    <td style="width: 260px;">性别</td>
+                    <td style="width: 260px;">手机</td>
+                    <td style="width: 280px;">邮箱</td>
+                    <td style="width: 280px;">userId</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="tableContent">
+        <table cellspacing="0" cellpadding="0">
+            <tbody id="userTable">
+            </tbody>
+        </table>
+    </div>
+    <script type="text/html" id="userList">
+        ##for(var i = 0;i
+        <list.length;i++){ ## ##var item=list[i];## <tr data-id="{{item.id}}">
+            <td class="check">
+                <input type="checkbox" name="" value="" class="selectRow">
+            </td>
+            <td style="width: 260px;" title="{{item.userName}}">{{item.userName}}</td>
+            <td style="width: 260px;" title="{{item.nike}}">{{item.nike}}</td>
+            <td style="width: 260px;" title="{{item.sex}}" class="user_sex">{{item.sex}}</td>
+            <td style="width: 260px;" title="{{item.phone}}">{{item.phone}}</td>
+            <td style="width: 280px;" title="{{item.email}}">{{item.email}}</td>
+            <td style="width: 280px;" title="{{item.userId}}">{{item.userId}}</td>
+            </tr>
+            ##}##
+    </script>
+</div>

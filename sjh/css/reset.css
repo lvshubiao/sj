@@ -1,0 +1,127 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "\5FAE\8F6F\96C5\9ED1", sans-serif;
+    font-size: 12px;
+    color: #555;
+    background: #fff;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+input {
+    outline: none;
+    border: 0.031rem solid #ccc;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+cite {
+    font-style: normal;
+}
+
+input,
+textarea,
+select,
+button {
+    font: 14px "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #fb4b4b;
+    text-decoration: none;
+}
+
+a:active {
+    color: #fb4b4b;
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+}
+
+.clearfix {
+    -ms-zoom: 1;
+}
+
+// 取消chrome浏览器下input和textarea的默认样式
+input,
+button,
+select,
+textarea {
+    outline: none
+}
+
+textarea {
+    resize: none
+}

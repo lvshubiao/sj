@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>医院后勤管理</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shorttcut icon" type="images/jpeg" href="./imgages/icon.jpg">
+    <link rel="stylesheet" type="text/css" href="css/page.css">
+</head>
+
+<body>
+    <!--头部开始  -->
+    <div class="main-header clear">
+        <div class="main-header-left">
+            <h3>医院后勤管理服务平台</h3>
+        </div>
+        <ul class="main-header-right clear" id="user">
+        </ul>
+        <script type="text/html" id="username">
+            ##var obj = list;##
+            <li class="nav-left iconfont">&#xe613;</li>
+            <li class="nav-right clear">
+                <img class="user-img" src="imgages/120-120.png" alt="">
+                <span class="user-name">{{obj}}</span>
+                <span class="iconfont drop-down">&#xe604;</span>
+            </li>
+        </script>
+        <ul class="drop-downmenu">
+            <li><a href="" class="alterPassword">修改密码</a></li>
+            <li><a href="" class="set">系统设置</a></li>
+            <li><a href="" class="logout">退出</a></li>
+        </ul>
+    </div>
+    <!-- 头部结束 -->
+    <!-- 主体内容开始 -->
+    <div class="main-content clear">
+        <!-- 内容左侧 -->
+        <div class="content-left">
+            <p class="main-menu">主菜单</p>
+            <ul id="left-menu" style="background-color: #222d32;">
+                <!-- <li class="outer-li">
+                    <p>
+                        <span class="iconfont icon-home">&#xe600;</span>
+                        <span class="desc">在线保修</span>
+                        <span class="iconfont icon-left">&#xe623;</span>
+                    </p>
+                    <ul class="inner-ul" style="display: none;">
+                        <li class="inner-li">
+                            <span class="iconfont icon-circle">&#xe60d;</span>
+                            <span class="inner-desc">首页</span>
+                        </li>
+                        <li class="inner-li">
+                            <span class="iconfont icon-circle">&#xe60d;</span>
+                            <span class="inner-desc">首页</span>
+                        </li>
+                        <li class="inner-li">
+                            <span class="iconfont icon-circle">&#xe60d;</span>
+                            <span class="inner-desc">首页</span>
+                        </li>
+                    </ul>
+                </li>  -->
+            </ul>
+        </div>
+        <script type="text/html" id="left-menu-list">
+            ##for(var i = 0;i
+            <list.length;i++) 
+            {## 
+            ##var item=list[i];## 
+            <li class="outer-li">
+                <p>
+                    <span class="iconfont icon-home">&#xe600;</span>
+                    <span class="desc">{{item}}</span>
+                    <span class="iconfont icon-left">&#xe623;</span>
+                </p>
+                <!--     <ul class="inner-ul" style="display: none;">
+                    <li class="inner-li">
+                        <span class="iconfont icon-circle">&#xe60d;</span>
+                        <span class="inner-desc">{{item.deals}}</span>
+                    </li>
+                    <li class="inner-li">
+                        <span class="iconfont icon-circle">&#xe60d;</span>
+                        <span class="inner-desc">{{item.deals1}}</span>
+                    </li>
+                </ul> -->
+                   </li>
+                ##}##
+        </script>
+        <!-- 内容右侧 -->
+        <div class="content-right">
+            <div class="mainBox" id="mainBox">
+                <p class="location clear">
+                    <span></span> 您的位置:其他管理>>用户管理
+                </p>
+                <ul class="toolbar clear">
+                    <li>
+                        <input type="button" name="" class="add" value="增加">
+                    </li>
+                    <li>
+                        <input type="button" name="" class="edit" value="编辑" disabled="disabled">
+                    </li>
+                    <li>
+                        <input type="button" name="" class="del" value="删除" disabled="disabled">
+                    </li>
+                    <li>
+                        <input type="button" name="" class="togroup" value="组授权" disabled="disabled">
+                    </li>
+                    <li>
+                        <input type="button" name="" class="torole" value="角色授权" disabled="disabled">
+                    </li>
+                </ul>
+                <!-- 用户列表 -->
+                <div class="usertable">
+                    <div class="table-title">
+                        <table cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td class="check">
+                                        <input type="checkbox" name="" value="" id="selectAll-usertable">
+                                    </td>
+                                    <td style="width: 1600px; overflow: hidden;">角色名</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tableContent">
+                        <table cellspacing="0" cellpadding="0">
+                            <tbody id="userTable">
+                                <tr data-id="{{item.id}}">
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pn-sp clear">
+                        <div class="pn-sp-left">&nbsp;每页
+                            <select name="" id="Select">
+                                <option value="5">5</option>
+                                <option value="10" selected="selected">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                            </select>
+                            条
+                        </div>
+                        <div class="pn-sp-center">
+                            <input type="button" name="" value="首页" disabled="disabled"> &nbsp;
+                            <input type="button" name="" value="上一页" disabled="disabled"> &nbsp; 当前
+                         <span>1</span> /
+                            <span>1</span> 页 &nbsp;
+                            <input type="button" name="" value="下一页" disabled="disabled"> &nbsp;
+                            <input type="button" name="" value="尾页" disabled="disabled">
+                        </div>
+                        <div class="pn-sp-right">
+                            共<span>2</span>条
+                        </div>
+                    </div>
+                     <ul class="page" maxshowpageitem="5" pagelistcount="10"  id="page"></ul>
+                    <script type="text/html" id="userList">
+                        ##for(var i = 0;i<list.length;i++){ ## 
+                        ##var item=list[i];## <tr data-id="{{item.id}}">
+                            <td class="check">
+                                <input type="checkbox" name="" value="" class="selectRow">
+                            </td>
+                            <td style="width: 1600px; overflow: hidden;" title="{{item.name}}">{{item.name}}</td>
+                            </tr>
+                            ##}##
+                    </script>
+                </div>
+            </div>
+            <div class="box" style="display: none;">
+            </div>
+        </div>
+    </div>
+    <!-- 主题内容结束 -->
+    <script src="js/global.js"></script>
+    
+    <script>
+    seajs.config({
+        base: './'
+    });
+    seajs.use('js/role.js', function(role) {
+        role.init();
+    })
+    </script>
+</body>
+
+</html>
